@@ -14,9 +14,6 @@ imagefilesProposal = dir(strcat(rootFolder,'test_segm/*.png'));
 nfiles = length(imagefilesGT)    % Number of files found
 assert(nfiles == length(imagefilesProposal));
 
-maxThresh = 1.;
-
-dev_1 = [];
 distanceThresholds = [6., 18. 30.];
 recallCollected = {};
 precisionCollected = {};
